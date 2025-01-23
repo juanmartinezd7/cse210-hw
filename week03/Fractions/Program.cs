@@ -49,6 +49,7 @@ class Program
         Console.WriteLine(fraction4.GetFractionString());
         Console.WriteLine(fraction4.GetDecimalValue());
 
+
     }
 }
 
