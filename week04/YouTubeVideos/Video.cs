@@ -5,17 +5,17 @@ using System.Transactions;
 
 class Video
 {
-    public string Title{get;}
-    public string Author{get;}
-    public int Length{get;}
+    public string _title{get;}
+    public string _author{get;}
+    public int _length{get;}
     public List<Comment> Comments{get;}
 
 
-    public Video(string _title, string _author, int _length)
+    public Video(string title, string author, int length)
     {
-        Title = _title;
-        Author = _author;
-        Length = _length;
+        _title = title;
+        _author = author;
+        _length = length;
         Comments = new List<Comment>();
     }
 

@@ -3,13 +3,13 @@ using System.Runtime.InteropServices.Marshalling;
 
 class Comment
 {
-    public string CommentAuthor{get;}
-    public string CommentText{get;}
+    public string _commentAuthor{get;}
+    public string _commentText{get;}
 
 
-    public Comment(string _commentAuthor, string _commentText)
+    public Comment(string commentAuthor, string commentText)
     {
-        CommentAuthor = _commentAuthor;
-        CommentText = _commentText;
+        _commentAuthor = commentAuthor;
+        _commentText = commentText;
     }
 }

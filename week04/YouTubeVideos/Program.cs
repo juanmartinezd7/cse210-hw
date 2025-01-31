@@ -39,14 +39,14 @@ class Program
         foreach (var video in videos)
         {
             Console.WriteLine("================================");
-            Console.WriteLine($"Title: {video.Title}");
-            Console.WriteLine($"Author: {video.Author}");
-            Console.WriteLine($"Length: {video.Length} seconds");
+            Console.WriteLine($"Title: {video._title}");
+            Console.WriteLine($"Author: {video._author}");
+            Console.WriteLine($"Length: {video._length} seconds");
             Console.WriteLine($"Number of Comments: {video.GetCommentCount()}");
             Console.WriteLine("Comments:");
             foreach (var Comment in video.Comments)
             {
-                Console.WriteLine($"-{Comment.CommentAuthor}: {Comment.CommentText}");
+                Console.WriteLine($"-{Comment._commentAuthor}: {Comment._commentText}");
             }
             Console.WriteLine("================================\n");
 
