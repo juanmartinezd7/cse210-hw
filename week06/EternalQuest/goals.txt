@@ -1,0 +1,4 @@
+75
+SimpleGoal|Ministering|I want to visit all of my assigned families this month|50|True
+EternalGoal|Scriptures|I want to read my scriptures every day |10
+ChecklistGoal|Temple|I want to attend the temple two times this month|25|2|1|100

@@ -1,0 +1,4 @@
+105
+SimpleGoal|Speak in sacrament |Speak in sacrament when asked|50|True
+EternalGoal|pray|pray every day|15
+ChecklistGoal|Attend the temple.|I want to attend the temple two times this month.|25|2|1|100

@@ -17,22 +17,33 @@ class ChecklistGoal : Goal
 
     public override void RecordEvent(ref int score)
     {
-
+        if (_amountCompleted < _target)
+        {
+            _amountCompleted++;
+            score += _points;
+            if (_amountCompleted == _target)
+            {
+                score += _bonus;
+            }
+        }
+        if (_amountCompleted == _target)
+        Console.WriteLine("This goal is already completed.");
+        return;
     }
 
-    public override bool IsComplete() 
+    public void SetProgress(int progress)
     {
-        return false;
+        _amountCompleted = progress;
     }
+
+    public override bool IsComplete() => _amountCompleted >= _target;
 
     public override string GetDetailsString() 
-    {
-        return " ";
-    }
+        => ($"[{(IsComplete() ? "X" : " ")}] {_shortName} ({_description}) -- Currently Completed: {_amountCompleted}/{_target}");
 
     public override string GetStringRepresentation() 
     {
-        return " ";
+        return $"ChecklistGoal|{_shortName}|{_description}|{_points}|{_target}|{_amountCompleted}|{_bonus}";
     }
 
 }
